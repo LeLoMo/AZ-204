@@ -37,7 +37,7 @@ Depending on your needs, you can choose scaling or auto-scaling options, select 
 | Publish    | You can deploy your application to App Service as code or as a ready-to-run Docker Container     |
 | Runtime stack    | For every Application, a runtime should be specified  |
 | Operating system    | Wondows or Linux     |
-| Region from which your application is served| Region       |
+| Region | Region from which your application is served|
 | Pricing Plans    | App Service plans and pricing      |
 
 ### Examine Azure App Service plans
