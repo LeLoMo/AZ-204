@@ -5,10 +5,14 @@ This file contains study notes for the Azure Cloud App Service. It will cover va
 ## Getting started with Azure App Service
 ### what is azure app service
 
-Azure App Service is for building and hosting 
---> web apps, 
+Azure App Service is for building and hosting
+
+--> web apps,
+
 --> mobile back ends,
+
 --> RESTful APIs 
+
 With the language of choice without managing infrastructure (Azure provide most infra needed to run the Stack of choice).
 
 Azure App Service support : 
