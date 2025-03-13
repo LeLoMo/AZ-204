@@ -1,35 +1,31 @@
 # Azure App Service Study Notes (in the making)
+<!-- This is a comment that will not appear in the rendered output -->
 
-This file contains study notes for the Azure Cloud App Service. It will cover various topics From plan types to peloyments slots
+This file contains study notes for Azure Cloud App Service. It covers various topics, from plan types to deployment slots.
 
-## Getting started with Azure App Service
-### what is azure app service
+## Getting Started with Azure App Service
+### What is Azure App Service?
 
-Azure App Service is for building and hosting
+Azure App Service is a platform for building and hosting:
 
---> web apps,
+--> Web apps  
+--> Mobile back ends  
+--> RESTful APIs  
 
---> mobile back ends,
+It allows you to use your language of choice without managing the underlying infrastructure, as Azure provides most of what you need to run your preferred stack.
 
---> RESTful APIs 
+Azure App Service supports:  
+- .NET  
+- Java (Java SE, Tomcat, and JBoss EAP)  
+- Node.js  
+- Python  
+- PHP  
+- Custom containers  
 
-With the language of choice without managing infrastructure (Azure provide most infra needed to run the Stack of choice).
+Depending on your needs, you can choose scaling or auto-scaling options, select between a Windows or Linux OS, and enable automated deployments.
 
-Azure App Service support : 
-.NET
-Java (Java SE, Tomcat, and JBoss EAP)
-Node.js
-Python
-PHP
-Custom containers
+## Web App Settings Configuration
 
-Depending on their needs, Users can choose scaling/auto-scaling options and availability, a Windows or Linux Os, or also enabling automated deployments 
+## Scaling and Azure App Service
 
-
-## Web App settings configuration
-
-
-## Scalling and Azure App Service 
-
-
-## Deployment slots 
+## Deployment Slots
