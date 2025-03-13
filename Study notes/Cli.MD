@@ -1,13 +1,4 @@
-# Azure Cloud CLI Study Notes
+# Azure Cloud CLI Study Notes (in the making)
 
-## test test
-
-### test test 
-
-1. test
-fffjg
-2. tessst
-ffff  
 This file contains study notes for the Azure Cloud Command-Line Interface (CLI). It will cover various commands, tips, and best practices to help you effectively manage and interact with Azure resources using the CLI.
 
-Feel free to add your own notes and examples as you learn and explore the Azure CLI.
