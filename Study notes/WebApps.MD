@@ -47,7 +47,7 @@ Depending on your needs, you can choose scaling or auto-scaling options, select 
 
 In App Service, an app always runs in an App Service plan. 
 An App Service plan defines a set of compute resources for a web app to run :
-  - (An App Service plan is a set of virtual server resources that run App Service apps). 
+  - (An App Service plan is a set of virtual server resources that run App Service apps).
 One or more apps can be configured to run on the same computing resources (or in the same App Service plan).
 
 A plan's size (sometimes referred to as pricing tier) determines the performance characteristics of the virtual servers that run the apps assigned to the plan, and the App Service features to which those apps have access.
