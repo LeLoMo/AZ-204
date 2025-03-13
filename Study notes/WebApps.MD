@@ -27,7 +27,7 @@ Azure App Service supports:
 
 Depending on your needs, you can choose scaling or auto-scaling options, select between a Windows or Linux OS, and enable automated deployments.
 
-1. Creating a Web App
+#### Creating a Web App
 
 | **Feature**  | **Description** |
 |----------|-------------|
@@ -41,6 +41,10 @@ Depending on your needs, you can choose scaling or auto-scaling options, select 
 | Pricing Plans    | App Service plans and pricing      |
 
 ### Examine Azure App Service plans
+An App Service plan is a set of virtual server resources that run App Service apps.
+
+
+
 ### Deploy to App Service
 ### Explore authentication and authorization in App Service
 
