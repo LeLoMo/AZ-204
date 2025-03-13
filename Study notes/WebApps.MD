@@ -31,14 +31,14 @@ Depending on your needs, you can choose scaling or auto-scaling options, select 
 
 | **Feature**  | **Description** |
 |----------|-------------|
-| Row 1    | Data 1      |
-| Row 2    | Data 2      |
-| Row 3    | Data 3         |
-| Row 4    | Data 4      |
-| Row 5    | Data 5      d  |
-| Row 6    | Data 6 ddf     |
-| Row 7    | Data 7      |
-| Row 8    | Data 8      |
+| Subscription    | A valid and active Azure subscription.      |
+| Resource group    | A valid resource group.      |
+| Name    | The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps.         |
+| Publish    | You can deploy your application to App Service as code or as a ready-to-run Docker Container     |
+| Runtime stack    | For every Application, a runtime should be specified  |
+| Operating system    | Wondows or Linux     |
+| Region from which your application is served| Region       |
+| Pricing Plans    | App Service plans and pricing      |
 
 ### Examine Azure App Service plans
 ### Deploy to App Service
