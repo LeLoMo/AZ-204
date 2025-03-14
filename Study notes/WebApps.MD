@@ -52,6 +52,26 @@ A plan's size (sometimes referred to as **pricing tier**) determines the perform
 
 **- Every App Service web app must be assigned to a single App Service plan, while One or more apps can be configured to run on the same computing resources (or in the same App Service plan).**
 
+### How does it work ?
+When an App Service plan is created in a certain region (ex : West Europe), a **set of compute resources is created for that plan in that region**.
+- Then All Apps in an App Service Plan run these compute resources as defined by the App Service plan chosen.
+
+Each App Service plan defines:
+- Operating System (Windows or Linux)
+- Region (West US, etc.)
+- Number of VM instances
+- Size of VM instances (Small, Medium, Large)
+- Pricing tier (Free, Shared, Basic, Standard Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
+
+### Pricing tiers : 
+
+
+
+
+
+
+
+
 ## Deploy to App Service
 ## Explore authentication and authorization in App Service
 
