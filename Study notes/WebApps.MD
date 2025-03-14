@@ -1,10 +1,10 @@
-# Azure App Service Study Notes (in the making)
+Azure App Service Study Notes (in the making)
 <!-- This is a comment that will not appear in the rendered output -->
 
 This file contains study notes for Azure Cloud App Service. It covers various topics, from plan types to deployment slots.
 
-## Getting Started with Azure App Service
-### What is Azure App Service?
+# Getting Started with Azure App Service
+## What is Azure App Service?
 
 Azure App Service is a platform as a service (PaaS) for building and hosting:
 
@@ -27,8 +27,9 @@ Azure App Service supports:
 Depending on your needs, you can choose scaling or auto-scaling options, select between a Windows or Linux OS, and enable automated deployments.
 
 
-#### Creating a Web App
+## Creating a Web App
 
+The Azure portal provides a wizard to create a web app. This wizard requires the following fields (We will see with the CLI later):
 | **Feature**  | **Description** |
 |----------|-------------|
 | Subscription    | A valid and active Azure subscription.      |
@@ -42,7 +43,7 @@ Depending on your needs, you can choose scaling or auto-scaling options, select 
 
 
 
-### Azure App Service plans
+## Azure App Service plans
 
 **An app always runs in an App Service plan.** 
 An App Service plan defines a set of compute resources for a web app to run --> --> --> **An App Service plan is a set of virtual server resources that run App Service apps.**
@@ -51,13 +52,13 @@ A plan's size (sometimes referred to as **pricing tier**) determines the perform
 
 **- Every App Service web app must be assigned to a single App Service plan, while One or more apps can be configured to run on the same computing resources (or in the same App Service plan).**
 
-### Deploy to App Service
-### Explore authentication and authorization in App Service
+## Deploy to App Service
+## Explore authentication and authorization in App Service
 
-### Discover App Service networking features
+## Discover App Service networking features
 
-## Web App Settings Configuration
+# Web App Settings Configuration
 
-## Scaling and Azure App Service
+# Scaling and Azure App Service
 
-## Deployment Slots
+# Deployment Slots
