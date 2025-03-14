@@ -73,14 +73,15 @@ Each App Service plan defines:
 - **Shared Compute : Free and Shared**
     - Runs an app on the same Azure VM as other App Service apps, including apps of other customers,
     - These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
+
+
+  In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and can't scale out.
 <br><br>
 
 - **Dedicated compute : Basic, Standard, Premium, PremiumV2, and PremiumV3**
     - Run apps on dedicated Azure VMs,
     - Only apps in the same App Service plans share the same compute resources. The higher the tier, 
     - The more VM instances are available to you for scale-out.
-    
-In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and can't scale out.
 <br><br>
 
 - **Isolated : Isolated and IsolatedV2**
