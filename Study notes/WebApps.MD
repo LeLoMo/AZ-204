@@ -75,7 +75,7 @@ Each App Service plan defines:
     - These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
 
 
-  In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and can't scale out.
+In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and can't scale out.
 <br><br>
 
 - **Dedicated compute : Basic, Standard, Premium, PremiumV2, and PremiumV3**
