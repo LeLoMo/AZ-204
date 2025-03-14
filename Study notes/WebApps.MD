@@ -1,7 +1,6 @@
-Azure App Service Study Notes (in the making)
 <!-- This is a comment that will not appear in the rendered output -->
 
-This file contains study notes for Azure Cloud App Service. It covers various topics, from plan types to deployment slots.
+This file contains study notes for Azure Cloud App Service. It covers various topics, from plan types to deployment slots.(in the making)
 
 # Getting Started with Azure App Service
 ## What is Azure App Service?
@@ -11,6 +10,7 @@ Azure App Service is a platform as a service (PaaS) for building and hosting:
 - Web apps  
 - Mobile back ends  
 - RESTful APIs  
+
 
 It allows you to use your language of choice without managing the underlying infrastructure, as Azure provides most of what you need to run your preferred stack.
 
@@ -43,6 +43,7 @@ The Azure portal provides a wizard to create a web app. This wizard requires the
 
 
 
+
 ## Azure App Service plans
 
 **An app always runs in an App Service plan.** 
@@ -54,7 +55,8 @@ A plan's size (sometimes referred to as **pricing tier**) determines the perform
 
 ### How does it work ?
 When an App Service plan is created in a certain region (ex : West Europe), a **set of compute resources is created for that plan in that region**.
-- Then All Apps in an App Service Plan run these compute resources as defined by the App Service plan chosen.
+--> --> Then All Apps in an App Service Plan run these compute resources as defined by the App Service plan chosen.
+
 
 Each App Service plan defines:
 - Operating System (Windows or Linux)
@@ -62,6 +64,8 @@ Each App Service plan defines:
 - Number of VM instances
 - Size of VM instances (Small, Medium, Large)
 - Pricing tier (Free, Shared, Basic, Standard Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
+
+
 
 ### Pricing tiers : 
 
