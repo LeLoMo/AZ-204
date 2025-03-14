@@ -65,10 +65,10 @@ Each App Service plan defines:
 - Size of VM instances (Small, Medium, Large)
 - Pricing tier (Free, Shared, Basic, Standard Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
 
-
+<br><br>
 
 ### Pricing tiers : 
-<br><br>
+
 
 - **Shared Compute : Free and Shared**
     - Runs an app on the same Azure VM as other App Service apps, including apps of other customers,
@@ -79,6 +79,8 @@ Each App Service plan defines:
     - Run apps on dedicated Azure VMs,
     - Only apps in the same App Service plans share the same compute resources. The higher the tier, 
     - The more VM instances are available to you for scale-out.
+    
+In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and can't scale out.
 <br><br>
 
 - **Isolated : Isolated and IsolatedV2**
