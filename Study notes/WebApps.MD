@@ -144,7 +144,7 @@ You can sign in users and access data by writing minimal or no code in your web 
 | Facebook            | /.auth/login/facebook    | App Service Facebook login         |
 | Google              | /.auth/login/google      | App Service Google login           |
 | X                   | /.auth/login/x           | App Service X login                |
-| Any OpenID Connect  | /.auth/login/"<providerName>" | App Service OpenID Connect login   |
+| Any OpenID Connect  | /.auth/login/"providerName" | App Service OpenID Connect login   |
 | GitHub              | /.auth/login/github      | App Service GitHub login           |
 
 
