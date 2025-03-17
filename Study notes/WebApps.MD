@@ -141,16 +141,33 @@ You can sign in users and access data by writing minimal or no code in your web 
 | Provider            | Sign-in endpoint         | How-To guidance                   |
 |---------------------|--------------------------|------------------------------------|
 | Microsoft Entra     | /.auth/login/aad         | [App Service Microsoft Entra platform login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad?tabs=workforce-configuration) |
-| Facebook            | /.auth/login/facebook    | [App Service Facebook login]()         |
-| Google              | /.auth/login/google      | [App Service Google login]()        |
-| X                   | /.auth/login/x           | [App Service X login]()                |
-| Any OpenID Connect  | /.auth/login/"providerName" | [App Service OpenID Connect login]()   |
-| GitHub              | /.auth/login/github      | [App Service GitHub login]()           |
+| Facebook            | /.auth/login/facebook    | [App Service Facebook login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-facebook)         |
+| Google              | /.auth/login/google      | [App Service Google login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google)        |
+| X                   | /.auth/login/x           | [App Service X login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-twitter)                |
+| Any OpenID Connect  | /.auth/login/"providerName" | [App Service OpenID Connect login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-openid-connect)   |
+| GitHub              | /.auth/login/github      | [App Service GitHub login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-github)           |
 
+### Authorization behavior
+- **Allow unauthenticated requests.** This option defers authorization of unauthenticated traffic to your application code
 
+- **Require authentication.** This option rejects any unauthenticated traffic to your application. This rejection can be a redirect action to one of the configured identity providers.
 
 ## Discover App Service networking features
 
+There are two main deployment types for Azure App Service:
+
+- **The multitenant public service** hosts App Service plans in the Free, Shared, Basic, Standard, Premium, PremiumV2, and PremiumV3 pricing SKUs.
+- **The single-tenant App Service Environment (ASE)** hosts Isolated SKU App Service plans directly in your Azure virtual network.
+
+### Multitenant networking features
+**Because there are many different customers in the same App Service scale unit,** Instead of connecting the networks, you need features to handle the various aspects of application communication for Inbound and Outbound
+
+| **Inbound features**            | **Outbound features**         |
+|---------------------|--------------------------|
+| App-assigned address     | Hybrid Connections         |
+| Access restrictions     | Gateway-required virtual network integration         |
+| Service endpoints     | Virtual network integration         |
+| Private endpoints     |         |
 # Web App Settings Configuration
 
 # Scaling and Azure App Service
