@@ -134,7 +134,7 @@ Automating this process can be done following theses steps :
 <!--
 /////also (cf later) (cf Sidecar containers later )/////
 -->
-ff
+
 
 
 
