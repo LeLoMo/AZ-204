@@ -65,7 +65,6 @@ Each App Service plan defines:
 - Size of VM instances (Small, Medium, Large)
 - Pricing tier (Free, Shared, Basic, Standard Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
 
-<br><br>
 
 ### Pricing tiers : 
 
