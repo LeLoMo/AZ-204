@@ -75,7 +75,6 @@ Each App Service plan defines:
     - These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
 
 
- In the Free and Shared tiers, an app receives CPU minutes on a shared VM instance and can't scale out.
 <br><br>
 
 - **Dedicated compute : Basic, Standard, Premium, PremiumV2, and PremiumV3**
@@ -92,16 +91,59 @@ Each App Service plan defines:
 
 ### Scalling :
 
+- In the **Free** and **Shared** tiers, an app receives CPU minutes on a shared VM instance and **can't scale out**.
 
+- In other tiers : 
 
+    - An app runs on all the VM instances configured in the App Service plan.
+    - If multiple apps are in the same App Service plan, they all share the same VM instances.
+    - If you have multiple deployment slots for an app, all deployment slots also run on the same VM instances.
+    - If you enable diagnostic logs, perform backups, or run WebJobs, they also use CPU cycles and memory on these VM instances.
 
+--> the App Service plan is the scale unit of the App Service apps
 
-
-
-
+**Ex :** If the plan is configured to run five VM instances, then all apps in the plan run on all five instances. If the plan is configured for autoscaling, then all apps in the plan are scaled out together based on the autoscale settings.
 
 
 ## Deploy to App Service
+App Service supports both automated and manual deployment.
+
+### Automated deployment
+Process used to push out new features and bug fixes in a fast and repetitive pattern with minimal effect on end users.
+
+Automated deployment (or continuous deployment) is supported by the following options : 
+- Azure DevOps Services,
+- GitHub,
+- Bitbucket.
+
+### Manual deployment
+App service support Manual deployment through the following options : 
+- Git (a Git URL can be added as a remote repo),
+- Cli (with the "webapp up" feature), 
+- Zip deploy (with curl or a similar HTTP),
+- FTP/S (Old fashion, butcould be needed for some cases).
+
+### Continuous deployment for containers : 
+Azure App service allow deployment from the Azure Container Registry or other container registries. 
+
+Automating this process can be done following theses steps : 
+- Build and tag the image,
+- Push the tagged image,
+- Update the deployment slot with the new image tag.
+<!--
+/////also (cf later) (cf Sidecar containers later )/////
+-->
+ff
+
+
+
+
+
+
+
+
+
+
 ## Explore authentication and authorization in App Service
 
 ## Discover App Service networking features
