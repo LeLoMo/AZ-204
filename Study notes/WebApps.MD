@@ -70,6 +70,10 @@ Each App Service plan defines:
 ### Pricing tiers : 
 
 
+
+
+
+
 - **Shared Compute : Free and Shared**
     - Runs an app on the same Azure VM as other App Service apps, including apps of other customers,
     - These tiers allocate CPU quotas to each app that runs on the shared resources, and the resources can't scale out.
