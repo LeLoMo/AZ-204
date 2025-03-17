@@ -135,17 +135,19 @@ Automating this process can be done following theses steps :
 /////also (cf later) (cf Sidecar containers later )/////
 -->
 
-
-
-
-
-
-
-
-
-
-
 ## Explore authentication and authorization in App Service
+You can sign in users and access data by writing minimal or no code in your web app, RESTful API, mobile back end, or Azure Functions.
+
+| Provider            | Sign-in endpoint         | How-To guidance                   |
+|---------------------|--------------------------|------------------------------------|
+| Microsoft Entra     | /.auth/login/aad         | App Service Microsoft Entra platform login |
+| Facebook            | /.auth/login/facebook    | App Service Facebook login         |
+| Google              | /.auth/login/google      | App Service Google login           |
+| X                   | /.auth/login/x           | App Service X login                |
+| Any OpenID Connect  | /.auth/login/<providerName> | App Service OpenID Connect login   |
+| GitHub              | /.auth/login/github      | App Service GitHub login           |
+
+
 
 ## Discover App Service networking features
 
