@@ -176,6 +176,19 @@ There are two main deployment types for Azure App Service:
 1. App Settings:
     - We call app settings the **variables passed as environment variables to the application code.**
     - These are key-value pairs that can be used to configure your application. They are typically used for application-specific settings such as feature flags, environment variables, or any other configuration data that your application needs to function.
+
+    ```json
+    {
+        "name": "<key-1>",
+        "value": "<value-1>",
+        "slotSetting": false
+    },
+    {
+        "name": "<key-2>",
+        "value": "<value-2>",
+        "slotSetting": false
+    },
+
     - App settings are accessible to applications as environment variables. The can be retrieved using the environment variable access methods provided by the programming language used.
     - **For ASP.NET and ASP.NET Core developers** setting app settings in App Service is like setting them in **"appSettings"** in **Web.config or appsettings.json**, but the values in App Service override the ones in Web.config or appsettings.json.
 
@@ -185,17 +198,7 @@ There are two main deployment types for Azure App Service:
 
 !! Both app settings and connection strings can be managed through the Azure Portal, and changes to them can be made without needing to redeploy the application. This makes it easy to update configurations or connection details as needed.
 
-```json
-  {
-    "name": "<key-1>",
-    "value": "<value-1>",
-    "slotSetting": false
-  },
-  {
-    "name": "<key-2>",
-    "value": "<value-2>",
-    "slotSetting": false
-  },
+
 
 
 # Scaling and Azure App Service
