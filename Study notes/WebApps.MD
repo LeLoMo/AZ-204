@@ -188,7 +188,7 @@ There are two main deployment types for Azure App Service:
         "value": "<value-2>",
         "slotSetting": false
     },
-
+    ```
     - App settings are accessible to applications as environment variables. The can be retrieved using the environment variable access methods provided by the programming language used.
     - **For ASP.NET and ASP.NET Core developers** setting app settings in App Service is like setting them in **"appSettings"** in **Web.config or appsettings.json**, but the values in App Service override the ones in Web.config or appsettings.json.
 
