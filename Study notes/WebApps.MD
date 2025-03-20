@@ -200,18 +200,18 @@ There are two main deployment types for Azure App Service:
 
     ```json
 
-  {
+    {
     "name": "name-1",
     "value": "conn-string-1",
     "type": "SQLServer",
     "slotSetting": false
-  },
-  {
+    },
+    {
     "name": "name-2",
     "value": "conn-string-2",
     "type": "PostgreSQL",
     "slotSetting": false
-  },
+    },
     ```
 
     - Connection strings are also accessible as environment variables, but they are specifically intended for connection-related information, ensuring that sensitive data like credentials are stored securely.
