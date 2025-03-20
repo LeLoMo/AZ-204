@@ -168,7 +168,14 @@ There are two main deployment types for Azure App Service:
 | Access restrictions     | Gateway-required virtual network integration         |
 | Service endpoints     | Virtual network integration         |
 | Private endpoints     |         |
+
+
 # Web App Settings Configuration
+
+
+
+
+
 
 # Scaling and Azure App Service
 
