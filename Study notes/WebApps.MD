@@ -197,23 +197,23 @@ There are two main deployment types for Azure App Service:
     - These are specifically used to store information required to **connect to external resources** like databases, storage accounts, or other services.
     - setting connection strings in App Service are like setting them in `connectionStrings` in **"Web.config"**, but the values you set in App Service override the ones in Web.config. **For other language stacks, it's better to use app settings instead**
 <
-```json
+    ```json
 
-    {
-    "name": "name-1",
-    "value": "conn-string-1",
-    "type": "SQLServer",
-    "slotSetting": false
-    },
-    {
-    "name": "name-2",
-    "value": "conn-string-2",
-    "type": "PostgreSQL",
-    "slotSetting": false
-    },
-```
+        {
+        "name": "name-1",
+        "value": "conn-string-1",
+        "type": "SQLServer",
+        "slotSetting": false
+        },
+        {
+        "name": "name-2",
+        "value": "conn-string-2",
+        "type": "PostgreSQL",
+        "slotSetting": false
+        },
+    ```
 
-- Connection strings are also accessible as environment variables, but they are specifically intended for connection-related information, ensuring that sensitive data like credentials are stored securely.
+    - Connection strings are also accessible as environment variables, but they are specifically intended for connection-related information, ensuring that sensitive data like credentials are stored securely.
 
 !! Both app settings and connection strings can be managed through the Azure Portal, and changes to them can be made without needing to redeploy the application. This makes it easy to update configurations or connection details as needed.
 
