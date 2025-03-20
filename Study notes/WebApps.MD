@@ -185,7 +185,7 @@ There are two main deployment types for Azure App Service:
 
 !! Both app settings and connection strings can be managed through the Azure Portal, and changes to them can be made without needing to redeploy the application. This makes it easy to update configurations or connection details as needed.
 
-[json
+```json
   {
     "name": "<key-1>",
     "value": "<value-1>",
@@ -196,8 +196,7 @@ There are two main deployment types for Azure App Service:
     "value": "<value-2>",
     "slotSetting": false
   },
-  ...
-]
+
 
 # Scaling and Azure App Service
 
