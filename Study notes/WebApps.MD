@@ -197,7 +197,7 @@ There are two main deployment types for Azure App Service:
     - 
     - These are specifically used to store information required to **connect to external resources** like databases, storage accounts, or other services.
     - setting connection strings in App Service are like setting them in `connectionStrings` in **"Web.config"**, but the values you set in App Service override the ones in Web.config. **For other language stacks, it's better to use app settings instead**
-
+<br>
     ```json
 
     {
@@ -213,6 +213,7 @@ There are two main deployment types for Azure App Service:
     "slotSetting": false
     },
     ```
+<br>
 
     - Connection strings are also accessible as environment variables, but they are specifically intended for connection-related information, ensuring that sensitive data like credentials are stored securely.
 
