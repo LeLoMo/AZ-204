@@ -220,8 +220,44 @@ There are two main deployment types for Azure App Service:
 
 !! Both app settings and connection strings can be managed through the Azure Portal, and changes to them can be made without needing to redeploy the application. This makes it easy to update configurations or connection details as needed.
 
+!! At runtime, connection strings are available as environment variables
 
+## General settings
 
+Some common settings for the app can be configured in the `Configuration > General settings` section.
+
+- List of setting :
+    - Stack settings
+    - Platform settings
+    - Debugging
+    - Incoming client certificates
+
+## Path mappings
+<!-- RRR -->
+
+**The Path mappings page displays different options based on the OS type.**
+
+### 1. Windows apps (uncontainerized)
+For Windows apps, handler mappings allow to customize how the Internet Information Services (IIS) handles requests for specific file extensions. This means custom script processors can be defined to handle requests for certain types of files.
+
+List of specification for "handler" configuration :
+- Extention, 
+- Script processor (The absolute path of the script processor using `D:\home\site\wwwroot`),
+- Arguments
+
+### 2. Linux and containerized apps
+for Linux and custom containers, the concept of handler mappings as used in Windows with IIS does not directly apply. Instead, when using Linux or custom containers, you typically manage your application's runtime environment and request handling through the container's configuration and the application code itself.
+
+List of specification for Linux Apps :
+- Name;
+- Configuration options **(Basic / Advanced)**;
+- Storage accounts;
+- Storage type **(Azure Blobs / Azure Files.)**;
+- Storage container;
+- Share name;
+- **Access key**;
+- Mount path;
+- **Deployment slot setting**;
 
 # Scaling and Azure App Service
 
