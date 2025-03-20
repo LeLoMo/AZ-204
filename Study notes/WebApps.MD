@@ -177,7 +177,7 @@ There are two main deployment types for Azure App Service:
     - We call app settings the **variables passed as environment variables to the application code.**
     - These are **key-value pairs** that can be used to configure your application. They are typically used for application-specific settings such as feature flags, environment variables, or any other configuration data that your application needs to function (as in the template bellow).
 
-    ```json
+    ```JSON
     {
         "name": "<key-1>",
         "value": "<value-1>",
@@ -197,8 +197,8 @@ There are two main deployment types for Azure App Service:
     - 
     - These are specifically used to store information required to **connect to external resources** like databases, storage accounts, or other services.
     - setting connection strings in App Service are like setting them in `connectionStrings` in **"Web.config"**, but the values you set in App Service override the ones in Web.config. **For other language stacks, it's better to use app settings instead**
-<br>
-    ```json
+<
+```JSON
 
     {
     "name": "name-1",
@@ -212,10 +212,9 @@ There are two main deployment types for Azure App Service:
     "type": "PostgreSQL",
     "slotSetting": false
     },
-    ```
-<br>
+```
 
-    - Connection strings are also accessible as environment variables, but they are specifically intended for connection-related information, ensuring that sensitive data like credentials are stored securely.
+- Connection strings are also accessible as environment variables, but they are specifically intended for connection-related information, ensuring that sensitive data like credentials are stored securely.
 
 !! Both app settings and connection strings can be managed through the Azure Portal, and changes to them can be made without needing to redeploy the application. This makes it easy to update configurations or connection details as needed.
 
